@@ -1,6 +1,5 @@
 <template>
-  <section id="hero"
-    class="relative min-h-screen flex items-center justify-center overflow-hidden
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden
            bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950/40">
 
     <!-- Background blobs -->
@@ -39,14 +38,12 @@
         </div>
 
         <div class="flex flex-wrap gap-4 mb-10">
-          <a href="#projects"
-             class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold
+          <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold
                     transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg
                     hover:shadow-indigo-500/25 flex items-center gap-2">
             <i class="fas fa-folder-open text-sm"></i> {{ t.hero.viewProjects }}
           </a>
-          <a href="#contact"
-             class="border border-gray-600 hover:border-indigo-500 text-gray-300 hover:text-indigo-400
+          <a href="#contact" class="border border-gray-600 hover:border-indigo-500 text-gray-300 hover:text-indigo-400
                     px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2">
             <i class="fas fa-paper-plane text-sm"></i> {{ t.hero.contact }}
           </a>
@@ -54,15 +51,15 @@
 
         <div class="flex gap-5">
           <a href="https://github.com" target="_blank"
-             class="text-gray-500 hover:text-white text-2xl transition-all hover:-translate-y-0.5 duration-200">
+            class="text-gray-500 hover:text-white text-2xl transition-all hover:-translate-y-0.5 duration-200">
             <i class="fab fa-github"></i>
           </a>
           <a href="https://linkedin.com" target="_blank"
-             class="text-gray-500 hover:text-indigo-400 text-2xl transition-all hover:-translate-y-0.5 duration-200">
+            class="text-gray-500 hover:text-indigo-400 text-2xl transition-all hover:-translate-y-0.5 duration-200">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="mailto:cuma.kaya@hicoders.ch"
-             class="text-gray-500 hover:text-indigo-400 text-2xl transition-all hover:-translate-y-0.5 duration-200">
+            class="text-gray-500 hover:text-indigo-400 text-2xl transition-all hover:-translate-y-0.5 duration-200">
             <i class="fas fa-envelope"></i>
           </a>
         </div>
@@ -103,9 +100,14 @@ import { useLanguage } from '../composables/useLanguage'
 const { t } = useLanguage()
 
 const badges = [
-  { text: 'Vue.js',    icon: 'fab fa-vuejs',   cls: 'bg-emerald-900/40 border-emerald-600/40 text-emerald-300' },
-  { text: 'Node.js',   icon: 'fab fa-node-js', cls: 'bg-green-900/40   border-green-600/40   text-green-300'   },
-  { text: 'AWS Cloud', icon: 'fab fa-aws',     cls: 'bg-orange-900/40  border-orange-600/40  text-orange-300'  },
-  { text: 'Java',      icon: 'fab fa-java',    cls: 'bg-red-900/40     border-red-600/40     text-red-300'     },
+  { text: 'Vue.js', icon: 'fab fa-vuejs', cls: 'bg-emerald-900/40 border-emerald-600/40 text-emerald-300' },
+  { text: 'Node.js', icon: 'fab fa-node-js', cls: 'bg-green-900/40 border-green-600/40 text-green-300' },
+  { text: 'AWS Cloud', icon: 'fab fa-aws', cls: 'bg-orange-900/40 border-orange-600/40 text-orange-300' },
+  { text: 'Java (Spring)', icon: 'fab fa-java', cls: 'bg-red-900/40 border-red-600/40 text-red-300' },
+  { text: 'React', icon: 'fab fa-react', cls: 'bg-cyan-900/40 border-cyan-600/40 text-cyan-300' },
+  { text: 'Angular', icon: 'fab fa-angular', cls: 'bg-red-900/40 border-red-600/40 text-red-300' },
+  { text: 'MySQL', icon: 'fas fa-database', cls: 'bg-blue-900/40 border-blue-600/40 text-blue-300' },
+  { text: 'Cybersecurity', icon: 'fas fa-shield-alt', cls: 'bg-blue-900/40 border-blue-600/40 text-blue-300' },
+  { text: 'Ethical Hacking', icon: 'fas fa-user-secret', cls: 'bg-purple-900/40 border-purple-600/40 text-purple-300' },
 ]
 </script>

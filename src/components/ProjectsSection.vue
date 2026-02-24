@@ -8,9 +8,8 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <div v-for="(p, i) in projects" :key="p.title"
-             class="card flex flex-col hover:-translate-y-2 group"
-             data-aos="fade-up" :data-aos-delay="i * 100">
+        <div v-for="(p, i) in projects" :key="p.title" class="card flex flex-col hover:-translate-y-2 group"
+          data-aos="fade-up" :data-aos-delay="i * 100">
 
           <div class="flex items-start justify-between mb-4">
             <div class="w-12 h-12 rounded-xl flex items-center justify-center" :class="p.iconBg">
@@ -18,7 +17,7 @@
             </div>
             <div class="flex gap-3">
               <a v-if="p.link" :href="p.link" target="_blank"
-                 class="text-gray-500 hover:text-indigo-400 transition-colors text-sm" :title="t.projects.live">
+                class="text-gray-500 hover:text-indigo-400 transition-colors text-sm" :title="t.projects.live">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -64,14 +63,14 @@ const projects = [
     date: 'April 2023',
     icon: 'fas fa-chart-bar', iconBg: 'bg-orange-900/50', iconColor: 'text-orange-400',
     tags: ['AWS S3', 'Frontend', 'Data Analysis'],
-    link: 'https://hack.digital-cluster-uri.ch/project/34'
+    link: 'https://cumathka.github.io/hoi_ui/#/'
   },
   {
-    title: 'Sefa Metzgerei – Website',
-    desc: 'Professionelle E-Commerce Website für eine Metzgerei. Vollständig eigenständig entwickelt, deployed und gewartet.',
+    title: 'Sefa Metzgerei – E-Commerce & Admin Portal',
+    desc: 'Professionelle E-Commerce Plattform mit Admin-Verwaltung für eine Metzgerei. Vollständig eigenständig entwickelt, deployed und gewartet.',
     date: '2023',
     icon: 'fas fa-store', iconBg: 'bg-green-900/50', iconColor: 'text-green-400',
-    tags: ['Vue.js', 'Firebase', 'GitHub Pages'],
+    tags: ['Vue.js', 'Firebase', 'Admin Portal', 'GitHub Pages'],
     link: 'https://www.sefametzgerei.ch'
   },
   {

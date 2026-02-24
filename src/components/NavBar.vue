@@ -15,11 +15,11 @@
         <li><a href="#projects" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.projects }}</a>
         </li>
         <li><a href="#experience" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.experience
-        }}</a></li>
+            }}</a></li>
         <li><a href="#education" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.education }}</a>
         </li>
         <li><a href="#certificates" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.certificates
-        }}</a></li>
+            }}</a></li>
       </ul>
 
       <div class="hidden md:flex items-center gap-4">
@@ -36,9 +36,9 @@
             :class="['px-2 py-1 rounded-md transition-all', currentLang === 'tr' ? 'bg-indigo-600 text-white shadow-sm' : 'text-gray-400 hover:text-indigo-300']">TR</button>
         </div>
 
-        <a href="mailto:cuma.kaya@hicoders.ch" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500
+        <a href="https://wa.me/41778074586" target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500
                   text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200">
-          <i class="fas fa-envelope text-xs"></i> {{ t.nav.contact }}
+          <i class="fab fa-whatsapp text-lg"></i> {{ t.nav.contact }}
         </a>
       </div>
 
