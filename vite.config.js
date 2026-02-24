@@ -3,9 +3,9 @@ import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
   plugins: [vue()],
-  base: "/cumakaya/",
+  base: "/", // özel domain kullanıyorsan bu olmalı
   build: {
-    outDir: "docs",
+    outDir: "docs", 
     emptyOutDir: true,
   },
 });
