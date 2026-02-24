@@ -54,23 +54,13 @@ const translations = {
       title: "Berufliche Erfahrung",
       jobs: [
         {
-          title: "Mathematiklehrer",
-          company:
-            "Staatliche Schulen – Ministerium für Nationale Bildung, Türkei",
-          period: "Sep 2007 – Aug 2016",
+          title: "Freiwilliger Fullstack Developer",
+          company: "Design Bees, Zürich (Remote)",
+          period: "Aug 2022 – Feb 2023",
           points: [
-            "Unterricht in Mathematik und Naturwissenschaften",
-            "Fortbildung in Bildungstechnologien",
-            "Entwicklung von E-Learning-Inhalten",
-          ],
-        },
-        {
-          title: "Textil Planungsspezialist",
-          company: "Karaman Textile, Samsun, Türkei",
-          period: "Dez – Aug 2017",
-          points: [
-            "Planung und Koordination von Textilproduktionsprozessen",
-            "Optimierung von Produktionsabläufen",
+            "Entwicklung mit Java Spring Boot und Angular",
+            "Zusammenarbeit im Team und Teilnahme an Teamaktivitäten",
+            "Anwendung gängiger Entwicklungstechniken und Werkzeuge",
           ],
         },
         {
@@ -81,6 +71,26 @@ const translations = {
             "Bedienung von 3-Achsen-CNC-Maschinen für Holz",
             "Erstellung von Produktionsplänen",
             "Alphacam 3D-Programm Anwendung",
+          ],
+        },
+        {
+          title: "Textil Planungsspezialist",
+          company: "Karaman Textile, Samsun, Türkei",
+          period: "Dez 2016 – Aug 2017",
+          points: [
+            "Planung und Koordination von Textilproduktionsprozessen",
+            "Optimierung von Produktionsabläufen",
+          ],
+        },
+        {
+          title: "Mathematiklehrer",
+          company:
+            "Staatliche Schulen – Ministerium für Nationale Bildung, Türkei",
+          period: "Sep 2007 – Aug 2016",
+          points: [
+            "Unterricht in Mathematik und Naturwissenschaften",
+            "Fortbildung in Bildungstechnologien",
+            "Entwicklung von E-Learning-Inhalten",
           ],
         },
       ],
@@ -194,22 +204,13 @@ const translations = {
       title: "Professional Experience",
       jobs: [
         {
-          title: "Mathematics Teacher",
-          company: "State Schools – Ministry of National Education, Turkey",
-          period: "Sep 2007 – Aug 2016",
+          title: "Volunteer Fullstack Developer",
+          company: "Design Bees, Zurich (Remote)",
+          period: "Aug 2022 – Feb 2023",
           points: [
-            "Teaching Mathematics and Science",
-            "Training in educational technologies",
-            "Development of e-learning content",
-          ],
-        },
-        {
-          title: "Textile Planning Specialist",
-          company: "Karaman Textile, Samsun, Turkey",
-          period: "Dec – Aug 2017",
-          points: [
-            "Planning and coordination of textile production processes",
-            "Optimization of production workflows",
+            "Development with Java Spring Boot and Angular",
+            "Collaboration within the team and participation in team activities",
+            "Application of common development techniques and tools",
           ],
         },
         {
@@ -220,6 +221,25 @@ const translations = {
             "Operation of 3-axis CNC machines for wood",
             "Creation of production plans",
             "Alphacam 3D program application",
+          ],
+        },
+        {
+          title: "Textile Planning Specialist",
+          company: "Karaman Textile, Samsun, Turkey",
+          period: "Dec 2016 – Aug 2017",
+          points: [
+            "Planning and coordination of textile production processes",
+            "Optimization of production workflows",
+          ],
+        },
+        {
+          title: "Mathematics Teacher",
+          company: "State Schools – Ministry of National Education, Turkey",
+          period: "Sep 2007 – Aug 2016",
+          points: [
+            "Teaching Mathematics and Science",
+            "Training in educational technologies",
+            "Development of e-learning content",
           ],
         },
       ],
@@ -333,23 +353,13 @@ const translations = {
       title: "Expérience Professionnelle",
       jobs: [
         {
-          title: "Professeur de Mathématiques",
-          company:
-            "Écoles publiques – Ministère de l'Éducation Nationale, Turquie",
-          period: "Sep 2007 – Aoû 2016",
+          title: "Développeur Fullstack Bénévole",
+          company: "Design Bees, Zurich (Télétravail)",
+          period: "Aoû 2022 – Fév 2023",
           points: [
-            "Enseignement des mathématiques et des sciences",
-            "Formation aux technologies éducatives",
-            "Développement de contenu e-learning",
-          ],
-        },
-        {
-          title: "Spécialiste Planification Textile",
-          company: "Karaman Textile, Samsun, Turquie",
-          period: "Déc – Aoû 2017",
-          points: [
-            "Planification et coordination des processus de production textile",
-            "Optimisation des flux de production",
+            "Développement avec Java Spring Boot et Angular",
+            "Collaboration en équipe et participation aux activités d'équipe",
+            "Utilisation des techniques et outils de développement courants",
           ],
         },
         {
@@ -360,6 +370,26 @@ const translations = {
             "Utilisation de machines CNC 3 axes pour le bois",
             "Création de plans de production",
             "Application du programme Alphacam 3D",
+          ],
+        },
+        {
+          title: "Spécialiste Planification Textile",
+          company: "Karaman Textile, Samsun, Turquie",
+          period: "Déc 2016 – Aoû 2017",
+          points: [
+            "Planification et coordination des processus de production textile",
+            "Optimisation des flux de production",
+          ],
+        },
+        {
+          title: "Professeur de Mathématiques",
+          company:
+            "Écoles publiques – Ministère de l'Éducation Nationale, Turquie",
+          period: "Sep 2007 – Aoû 2016",
+          points: [
+            "Enseignement des mathématiques et des sciences",
+            "Formation aux technologies éducatives",
+            "Développement de contenu e-learning",
           ],
         },
       ],
@@ -473,22 +503,13 @@ const translations = {
       title: "Profesyonel Deneyim",
       jobs: [
         {
-          title: "Matematik Öğretmeni",
-          company: "Devlet Okulları – Milli Eğitim Bakanlığı, Türkiye",
-          period: "Eyl 2007 – Ağu 2016",
+          title: "Gönüllü Fullstack Geliştirici",
+          company: "Design Bees, Zürih (Uzaktan)",
+          period: "Ağu 2022 – Şub 2023",
           points: [
-            "Matematik ve Fen Bilimleri Öğretimi",
-            "Eğitim teknolojileri eğitimi",
-            "E-öğrenme içeriği geliştirme",
-          ],
-        },
-        {
-          title: "Tekstil Planlama Uzmanı",
-          company: "Karaman Tekstil, Samsun, Türkiye",
-          period: "Ara – Ağu 2017",
-          points: [
-            "Tekstil üretim süreçlerinin planlanması ve koordinasyonu",
-            "Üretim akışlarının optimizasyonu",
+            "Java Spring Boot ve Angular ile geliştirme",
+            "Takım içi işbirliği ve ekip aktivitelerine katılım",
+            "Yaygın geliştirme teknikleri ve araçlarının kullanımı",
           ],
         },
         {
@@ -499,6 +520,25 @@ const translations = {
             "Ahşap için 3 eksenli CNC makinelerinin kullanımı",
             "Üretim planlarının oluşturulması",
             "Alphacam 3D program uygulaması",
+          ],
+        },
+        {
+          title: "Tekstil Planlama Uzmanı",
+          company: "Karaman Tekstil, Samsun, Türkiye",
+          period: "Ara 2016 – Ağu 2017",
+          points: [
+            "Tekstil üretim süreçlerinin planlanması ve koordinasyonu",
+            "Üretim akışlarının optimizasyonu",
+          ],
+        },
+        {
+          title: "Matematik Öğretmeni",
+          company: "Devlet Okulları – Milli Eğitim Bakanlığı, Türkiye",
+          period: "Eyl 2007 – Ağu 2016",
+          points: [
+            "Matematik ve Fen Bilimleri Öğretimi",
+            "Eğitim teknolojileri eğitimi",
+            "E-öğrenme içeriği geliştirme",
           ],
         },
       ],
