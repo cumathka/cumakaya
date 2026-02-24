@@ -95,7 +95,7 @@
           
           <div class="card text-center hover:-translate-y-1">
             <div class="text-3xl font-extrabold text-transparent bg-clip-text
-                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">51+</div>
+                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">50+</div>
             <p class="text-gray-400 text-sm">{{ t.about.stats.certs }}</p>
           </div>
 
