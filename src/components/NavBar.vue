@@ -15,11 +15,11 @@
         <li><a href="#projects" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.projects }}</a>
         </li>
         <li><a href="#experience" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.experience
-            }}</a></li>
+        }}</a></li>
         <li><a href="#education" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.education }}</a>
         </li>
         <li><a href="#certificates" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.certificates
-            }}</a></li>
+        }}</a></li>
       </ul>
 
       <div class="hidden md:flex items-center gap-4">
@@ -51,32 +51,38 @@
 
     <!-- Mobile Dropdown -->
     <transition name="fade-down">
-      <div v-show="open" class="md:hidden bg-slate-900/98 border-t border-gray-800">
-        <ul class="py-3 px-6 space-y-1">
-          <li><a href="#about" @click="open = false" class="block py-3 text-gray-400 hover:text-indigo-400 text-sm">{{
-            t.nav.about }}</a></li>
-          <li><a href="#skills" @click="open = false" class="block py-3 text-gray-400 hover:text-indigo-400 text-sm">{{
-            t.nav.skills }}</a></li>
+      <div v-show="open"
+        class="md:hidden fixed top-16 left-0 w-full h-[calc(100vh-4rem)] bg-slate-900/98 backdrop-blur-xl border-t border-gray-800 overflow-y-auto">
+        <ul class="flex flex-col items-center justify-center min-h-full py-8 space-y-6">
+          <li><a href="#about" @click="open = false"
+              class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.about }}</a>
+          </li>
+          <li><a href="#skills" @click="open = false"
+              class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.skills }}</a>
+          </li>
           <li><a href="#projects" @click="open = false"
-              class="block py-3 text-gray-400 hover:text-indigo-400 text-sm">{{ t.nav.projects }}</a></li>
+              class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.projects }}</a>
+          </li>
           <li><a href="#experience" @click="open = false"
-              class="block py-3 text-gray-400 hover:text-indigo-400 text-sm">{{ t.nav.experience }}</a></li>
+              class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.experience
+              }}</a></li>
           <li><a href="#education" @click="open = false"
-              class="block py-3 text-gray-400 hover:text-indigo-400 text-sm">{{ t.nav.education }}</a></li>
-
+              class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.education
+              }}</a></li>
           <li><a href="#certificates" @click="open = false"
-              class="block py-3 text-gray-400 hover:text-indigo-400 text-sm">{{ t.nav.certificates }}</a></li>
+              class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.certificates
+              }}</a></li>
 
-          <li class="pt-4 border-t border-gray-800 mt-2">
-            <div class="flex flex-wrap gap-2 justify-center mb-4">
+          <li class="pt-8 border-t border-gray-800 w-48 flex justify-center">
+            <div class="flex flex-wrap gap-2 justify-center">
               <button @click="setLanguage('de')"
-                :class="['px-3 py-1.5 rounded-md text-sm', currentLang === 'de' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">DE</button>
+                :class="['px-3 py-1.5 rounded-md text-sm transition-all', currentLang === 'de' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">DE</button>
               <button @click="setLanguage('en')"
-                :class="['px-3 py-1.5 rounded-md text-sm', currentLang === 'en' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">EN</button>
+                :class="['px-3 py-1.5 rounded-md text-sm transition-all', currentLang === 'en' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">EN</button>
               <button @click="setLanguage('fr')"
-                :class="['px-3 py-1.5 rounded-md text-sm', currentLang === 'fr' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">FR</button>
+                :class="['px-3 py-1.5 rounded-md text-sm transition-all', currentLang === 'fr' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">FR</button>
               <button @click="setLanguage('tr')"
-                :class="['px-3 py-1.5 rounded-md text-sm', currentLang === 'tr' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">TR</button>
+                :class="['px-3 py-1.5 rounded-md text-sm transition-all', currentLang === 'tr' ? 'bg-indigo-600 text-white' : 'bg-gray-800 text-gray-400']">TR</button>
             </div>
           </li>
         </ul>

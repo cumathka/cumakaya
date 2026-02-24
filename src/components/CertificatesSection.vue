@@ -34,18 +34,18 @@
             </div>
 
             <!-- Pagination Controls -->
-            <div v-if="totalPages > 1" class="flex justify-center items-center gap-2 mt-8" data-aos="fade-up">
+            <div v-if="totalPages > 1" class="flex flex-wrap justify-center items-center gap-2 mt-8" data-aos="fade-up">
                 <!-- Previous Button -->
                 <button @click="prevPage" :disabled="currentPage === 1"
-                    class="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                    class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                     aria-label="Previous page">
-                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-left text-xs md:text-sm"></i>
                 </button>
 
                 <!-- Page Numbers -->
-                <div class="flex gap-2">
+                <div class="flex flex-wrap justify-center gap-1 md:gap-2">
                     <button v-for="page in displayedPages" :key="page" @click="goToPage(page)" :class="[
-                        'w-10 h-10 rounded-lg flex items-center justify-center text-sm font-medium transition-all border',
+                        'w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center text-xs md:text-sm font-medium transition-all border',
                         currentPage === page
                             ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-500/20'
                             : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-indigo-500/50 hover:text-indigo-400'
@@ -56,9 +56,9 @@
 
                 <!-- Next Button -->
                 <button @click="nextPage" :disabled="currentPage === totalPages"
-                    class="w-10 h-10 flex items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                    class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                     aria-label="Next page">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right text-xs md:text-sm"></i>
                 </button>
             </div>
 

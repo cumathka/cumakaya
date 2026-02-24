@@ -8,7 +8,7 @@
       <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-purple-800/15 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative z-10 max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-16 items-center">
+    <div class="relative z-10 max-w-6xl mx-auto px-6 py-24 lg:py-32 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
       <!-- Left: Text -->
       <div data-aos="fade-right">
@@ -17,6 +17,7 @@
           <span class="text-indigo-400 text-sm font-semibold tracking-widest uppercase">
             {{ t.hero.role }}
           </span>
+          <div class="h-px w-12 bg-indigo-500"></div>
         </div>
 
         <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
