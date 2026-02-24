@@ -1,5 +1,211 @@
 import { ref, computed } from "vue";
 
+const courses = [
+  {
+    title: "Complete Java Developer Course from Scratch",
+    issuer: "Udemy",
+  },
+  {
+    title: "Advanced Android Mobile Application",
+    issuer: "Udemy",
+  },
+  {
+    title:
+      "Advanced Ethical Hacker: Penetration Testing & Privilege Escalation",
+    issuer: "Udemy",
+  },
+  {
+    title: "Advanced Styling with Responsive Design",
+    issuer: "University of Michigan-Coursera",
+  },
+  {
+    title: "Android Mobile Application Course: Kotlin & Java",
+    issuer: "Udemy",
+  },
+  {
+    title:
+      "Artificial General Intelligence: The Technology, Impact, and Ethics",
+    issuer: "LinkedIn Learning",
+  },
+  {
+    title: "Automating Your Work with Custom GPTs (No Code Required)",
+    issuer: "LinkedIn Learning",
+  },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services (AWS) Coursera",
+  },
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "Amazon Web Services (AWS) Coursera",
+  },
+  {
+    title: "AWS Fundamentals Lab Series",
+    issuer: "Amazon Web Services (AWS) Coursera",
+  },
+  {
+    title: "AWS re/Start Course",
+    issuer: "Amazon Web Services (AWS)",
+  },
+  {
+    title: "AWS re/Start Graduate",
+    issuer: "Amazon Web Services (AWS)",
+  },
+  {
+    title: "Becoming an Ethical Hacker: Mobile Applications and Phones",
+    issuer: "Udemy",
+  },
+  {
+    title: "Becoming an Ethical Hacker: Web Penetration Testing and Bug Bounty",
+    issuer: "Udemy",
+  },
+  {
+    title: "BOOST YOUR CAREER WITH AI",
+    issuer: "Kiron Open Higher Education",
+  },
+  {
+    title: "Build a free website with WordPress",
+    issuer: "Coursera",
+  },
+  {
+    title: "Creating a WordPress Website: Blog, E-Commerce, Corporate",
+    issuer: "Udemy",
+  },
+  {
+    title: "CSS3",
+    issuer: "Hi/Coders",
+  },
+  {
+    title: "Cybersecurity Fundamentals",
+    issuer: "IBM SkillsBuild",
+  },
+  {
+    title: "Ethical Hacker Course",
+    issuer: "Udemy",
+  },
+  {
+    title: "Explore Emerging Tech",
+    issuer: "IBM SkillsBuild",
+  },
+  {
+    title: "Foundations of Linux",
+    issuer: "Coursera",
+  },
+  {
+    title: "Front-End Web Development with React",
+    issuer: "The Hong Kong University of Science and Technology Coursera",
+  },
+  {
+    title: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+    issuer: "The Hong Kong University of Science and Technology Coursera",
+  },
+  {
+    title: "Full Stack Web Programming",
+    issuer: "Hi/Coders",
+  },
+  {
+    title: "Generative AI with Large Language Models",
+    issuer: "DeepLearning.AI & Amazon Web Services Coursera",
+  },
+  {
+    title: "Getting Started with Threat Intelligence and Hunting",
+    issuer: "IBM SkillsBuild",
+  },
+  {
+    title: "Hands-On AI: Build Your Own GPTs",
+    issuer: "LinkedIn Learning",
+  },
+  {
+    title: "How to Boost Your Productivity with AI Tools (2023)",
+    issuer: "LinkedIn Learning",
+  },
+  {
+    title: "How to Research and Write Using Generative AI Tools (2023)",
+    issuer: "LinkedIn Learning",
+  },
+  {
+    title:
+      "IBM SkillsBuild Presents: How to Become a Cybersecurity Professional",
+    issuer: "IBM SkillsBuild",
+  },
+  {
+    title: "Interactivity with JavaScript",
+    issuer: "University of Michigan Coursera",
+  },
+  {
+    title: "Introduction to CSS3",
+    issuer: "University of Michigan Coursera",
+  },
+  {
+    title: "Introduction to Cybersecurity Careers",
+    issuer: "IBM / Coursera",
+  },
+  {
+    title: "Introduction to Front-End Development",
+    issuer: "Meta Coursera",
+  },
+  {
+    title: "Introduction to HTML5",
+    issuer: "University of Michigan Coursera",
+  },
+  {
+    title: "Java",
+    issuer: "Sololearn",
+  },
+  {
+    title: "Javascript & Advanced Programming",
+    issuer: "Hi/Coders",
+  },
+  {
+    title: "Javascript & Programming Basics",
+    issuer: "Hi/Coders",
+  },
+  {
+    title: "Node.js",
+    issuer: "Hi/Coders",
+  },
+  {
+    title: "Penetration Testing, Threat Hunting, and Cryptography",
+    issuer: "Coursera",
+  },
+  {
+    title: "Product Development using AutoCAD",
+    issuer: "Coursera",
+  },
+  {
+    title: "React",
+    issuer: "Hi/Coders",
+  },
+  {
+    title: "SAP Professional Fundamentals",
+    issuer: "SAP Coursera",
+  },
+  {
+    title: "Terraform Basics: Automate Provisioning of AWS EC2 Instances",
+    issuer: "Coursera (Guided Projects) Coursera",
+  },
+  {
+    title: "Terraform for absolute beginners",
+    issuer: "Coursera",
+  },
+  {
+    title: "The Most Up-to-Date Spring Course in Turkey: 2025",
+    issuer: "Udemy",
+  },
+  {
+    title: "The Potential Power of AI Is Beyond Belief with MattVidPro",
+    issuer: "eLearning / Webinar (CompTIA platform)",
+  },
+  {
+    title: "Understanding Bias in AI",
+    issuer: "LinkedIn Learning",
+  },
+  {
+    title: "What Is Generative AI?",
+    issuer: "LinkedIn Learning",
+  },
+];
+
 const currentLang = ref("de");
 
 const translations = {
@@ -10,6 +216,7 @@ const translations = {
       projects: "Projekte",
       experience: "Erfahrung",
       education: "Ausbildung",
+      certificates: "Zertifikate",
       contact: "Kontakt",
     },
     hero: {
@@ -97,7 +304,7 @@ const translations = {
     },
     education: {
       subtitle: "Mein Werdegang",
-      title: "Ausbildung & Kurse",
+      title: "Ausbildung",
       items: [
         {
           title: "AWS Re-Start + Cloud Kurs",
@@ -134,6 +341,11 @@ const translations = {
         },
       ],
     },
+    certificates: {
+      subtitle: "Meine Erfolge",
+      title: "Zertifikate",
+      items: courses,
+    },
     contact: {
       subtitle: "Schreib mir",
       title: "Kontakt",
@@ -160,6 +372,7 @@ const translations = {
       projects: "Projects",
       experience: "Experience",
       education: "Education",
+      certificates: "Certificates",
       contact: "Contact",
     },
     hero: {
@@ -246,7 +459,7 @@ const translations = {
     },
     education: {
       subtitle: "My Background",
-      title: "Education & Courses",
+      title: "Education",
       items: [
         {
           title: "AWS Re-Start + Cloud Course",
@@ -283,6 +496,11 @@ const translations = {
         },
       ],
     },
+    certificates: {
+      subtitle: "My Achievements",
+      title: "Certificates",
+      items: courses,
+    },
     contact: {
       subtitle: "Write me",
       title: "Contact",
@@ -308,6 +526,7 @@ const translations = {
       skills: "Compétences",
       projects: "Projets",
       experience: "Expérience",
+      certificates: "Certificats",
       education: "Formation",
       contact: "Contact",
     },
@@ -396,7 +615,7 @@ const translations = {
     },
     education: {
       subtitle: "Mon parcours",
-      title: "Formation & Cours",
+      title: "Formation",
       items: [
         {
           title: "AWS Re-Start + Cours Cloud",
@@ -433,6 +652,11 @@ const translations = {
         },
       ],
     },
+    certificates: {
+      subtitle: "Mes Réalisations",
+      title: "Certificats",
+      items: courses,
+    },
     contact: {
       subtitle: "Écrivez-moi",
       title: "Contact",
@@ -457,6 +681,7 @@ const translations = {
       about: "Hakkımda",
       skills: "Yetenekler",
       projects: "Projeler",
+      certificates: "Sertifikalar",
       experience: "Deneyim",
       education: "Eğitim",
       contact: "İletişim",
@@ -545,7 +770,7 @@ const translations = {
     },
     education: {
       subtitle: "Geçmişim",
-      title: "Eğitim & Kurslar",
+      title: "Eğitim",
       items: [
         {
           title: "AWS Re-Start + Bulut Kursu",
@@ -581,6 +806,11 @@ const translations = {
           ],
         },
       ],
+    },
+    certificates: {
+      subtitle: "Başarılarım",
+      title: "Sertifikalar",
+      items: courses,
     },
     contact: {
       subtitle: "Bana yazın",
