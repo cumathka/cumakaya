@@ -16,20 +16,19 @@
         <div class="flex items-center gap-3 mb-6">
           <div class="h-px w-12 bg-indigo-500"></div>
           <span class="text-indigo-400 text-sm font-semibold tracking-widest uppercase">
-            Full Stack Developer
+            {{ t.hero.role }}
           </span>
         </div>
 
         <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          Hallo, ich bin<br>
+          {{ t.hero.greeting }}<br>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
             Cuma Kaya
           </span>
         </h1>
 
         <p class="text-gray-400 text-lg leading-relaxed mb-8 max-w-lg">
-          Junior Full Stack Developer mit AWS Cloud Practitioner Zertifizierung.
-          Leidenschaftlich für moderne Webtechnologien und Cloud-Lösungen aus Altdorf, Schweiz.
+          {{ t.hero.description }}
         </p>
 
         <div class="flex flex-wrap gap-2 mb-10">
@@ -44,12 +43,12 @@
              class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-xl font-semibold
                     transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg
                     hover:shadow-indigo-500/25 flex items-center gap-2">
-            <i class="fas fa-folder-open text-sm"></i> Projekte ansehen
+            <i class="fas fa-folder-open text-sm"></i> {{ t.hero.viewProjects }}
           </a>
           <a href="#contact"
              class="border border-gray-600 hover:border-indigo-500 text-gray-300 hover:text-indigo-400
                     px-6 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center gap-2">
-            <i class="fas fa-paper-plane text-sm"></i> Kontakt
+            <i class="fas fa-paper-plane text-sm"></i> {{ t.hero.contact }}
           </a>
         </div>
 
@@ -93,13 +92,16 @@
     <!-- Scroll indicator -->
     <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center
                 gap-2 text-gray-600 animate-bounce">
-      <span class="text-xs tracking-widest uppercase">Scroll</span>
+      <span class="text-xs tracking-widest uppercase">{{ t.hero.scroll }}</span>
       <i class="fas fa-chevron-down text-sm"></i>
     </div>
   </section>
 </template>
 
 <script setup>
+import { useLanguage } from '../composables/useLanguage'
+const { t } = useLanguage()
+
 const badges = [
   { text: 'Vue.js',    icon: 'fab fa-vuejs',   cls: 'bg-emerald-900/40 border-emerald-600/40 text-emerald-300' },
   { text: 'Node.js',   icon: 'fab fa-node-js', cls: 'bg-green-900/40   border-green-600/40   text-green-300'   },

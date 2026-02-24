@@ -3,8 +3,8 @@
     <div class="max-w-4xl mx-auto">
 
       <div data-aos="fade-up" class="text-center mb-16">
-        <p class="text-indigo-400 text-sm font-semibold tracking-widest uppercase mb-3">Meine Laufbahn</p>
-        <h2 class="section-title">Berufliche Erfahrung</h2>
+        <p class="text-indigo-400 text-sm font-semibold tracking-widest uppercase mb-3">{{ t.experience.subtitle }}</p>
+        <h2 class="section-title">{{ t.experience.title }}</h2>
       </div>
 
       <div class="relative">
@@ -13,7 +13,7 @@
                     bg-gradient-to-b from-indigo-500 via-purple-600 to-transparent
                     transform md:-translate-x-1/2"></div>
 
-        <div v-for="(job, i) in jobs" :key="i"
+        <div v-for="(job, i) in t.experience.jobs" :key="i"
              class="relative mb-10 pl-16 md:pl-0"
              :data-aos="i % 2 === 0 ? 'fade-right' : 'fade-left'">
 
@@ -51,35 +51,6 @@
 </template>
 
 <script setup>
-const jobs = [
-  {
-    title: 'Mathematiklehrer',
-    company: 'Staatliche Schulen – Ministerium für Nationale Bildung, Türkei',
-    period: 'Sep 2007 – Aug 2016',
-    points: [
-      'Unterricht in Mathematik und Naturwissenschaften',
-      'Fortbildung in Bildungstechnologien',
-      'Entwicklung von E-Learning-Inhalten',
-    ]
-  },
-  {
-    title: 'Textil Planungsspezialist',
-    company: 'Karaman Textile, Samsun, Türkei',
-    period: 'Dez – Aug 2017',
-    points: [
-      'Planung und Koordination von Textilproduktionsprozessen',
-      'Optimierung von Produktionsabläufen',
-    ]
-  },
-  {
-    title: '3-Achsen-CNC-Maschinenbediener',
-    company: 'Holzverarbeitung, Hatay, Türkei',
-    period: 'Nov 2019 – Mai 2021',
-    points: [
-      'Bedienung von 3-Achsen-CNC-Maschinen für Holz',
-      'Erstellung von Produktionsplänen',
-      'Alphacam 3D-Programm Anwendung',
-    ]
-  },
-]
+import { useLanguage } from '../composables/useLanguage'
+const { t } = useLanguage()
 </script>

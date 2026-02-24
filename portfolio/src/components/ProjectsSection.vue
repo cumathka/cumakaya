@@ -3,8 +3,8 @@
     <div class="max-w-6xl mx-auto">
 
       <div data-aos="fade-up" class="text-center mb-16">
-        <p class="text-indigo-400 text-sm font-semibold tracking-widest uppercase mb-3">Was ich gebaut habe</p>
-        <h2 class="section-title">Projekte</h2>
+        <p class="text-indigo-400 text-sm font-semibold tracking-widest uppercase mb-3">{{ t.projects.subtitle }}</p>
+        <h2 class="section-title">{{ t.projects.title }}</h2>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
@@ -18,7 +18,7 @@
             </div>
             <div class="flex gap-3">
               <a v-if="p.link" :href="p.link" target="_blank"
-                 class="text-gray-500 hover:text-indigo-400 transition-colors text-sm" title="Live ansehen">
+                 class="text-gray-500 hover:text-indigo-400 transition-colors text-sm" :title="t.projects.live">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -46,6 +46,9 @@
 </template>
 
 <script setup>
+import { useLanguage } from '../composables/useLanguage'
+const { t } = useLanguage()
+
 const projects = [
   {
     title: 'Design Bees – Angular & Java',

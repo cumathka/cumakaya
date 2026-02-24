@@ -3,8 +3,8 @@
     <div class="max-w-6xl mx-auto">
 
       <div data-aos="fade-up" class="text-center mb-16">
-        <p class="text-indigo-400 text-sm font-semibold tracking-widest uppercase mb-3">Was ich kann</p>
-        <h2 class="section-title">Fähigkeiten & Technologien</h2>
+        <p class="text-indigo-400 text-sm font-semibold tracking-widest uppercase mb-3">{{ t.skills.subtitle }}</p>
+        <h2 class="section-title">{{ t.skills.title }}</h2>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -32,6 +32,9 @@
 </template>
 
 <script setup>
+import { useLanguage } from '../composables/useLanguage'
+const { t } = useLanguage()
+
 const skills = [
   {
     title: 'Frontend',
