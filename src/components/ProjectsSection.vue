@@ -8,7 +8,7 @@
       </div>
 
       <div class="grid md:grid-cols-2 gap-6">
-        <div v-for="(p, i) in projects" :key="p.title" class="card flex flex-col hover:-translate-y-2 group"
+        <div v-for="(p, i) in t.projects.items" :key="p.title" class="card flex flex-col hover:-translate-y-2 group"
           data-aos="fade-up" :data-aos-delay="i * 100">
 
           <div class="flex items-start justify-between mb-4">
@@ -47,39 +47,4 @@
 <script setup>
 import { useLanguage } from '../composables/useLanguage'
 const { t } = useLanguage()
-
-const projects = [
-  {
-    title: 'Design Bees – Angular & Java',
-    desc: 'Teambasiertes 6-Monats-Projekt mit Java OOP, Angular-Frontend, MySQL-Datenbankverwaltung, CI/CD-Pipelines und Projektmanagement mit Jira.',
-    date: 'Aug 2022 – Feb 2023',
-    icon: 'fas fa-code', iconBg: 'bg-indigo-900/50', iconColor: 'text-indigo-400',
-    tags: ['Java', 'Angular', 'MySQL', 'CI/CD', 'Jira'],
-    link: null
-  },
-  {
-    title: 'Data Hackdays Uri 2025',
-    desc: 'Integration Monitoring Projekt. Frontend eigenständig innerhalb von 2 Tagen entwickelt und auf AWS S3 gehostet. Demographische & soziale Daten kombiniert.',
-    date: 'April 2025',
-    icon: 'fas fa-chart-bar', iconBg: 'bg-orange-900/50', iconColor: 'text-orange-400',
-    tags: ['AWS S3', 'Frontend', 'Data Analysis'],
-    link: 'https://cumathka.github.io/hoi_ui/#/'
-  },
-  {
-    title: 'Sefa Metzgerei – E-Commerce & Admin Portal',
-    desc: 'Professionelle E-Commerce Plattform mit Admin-Verwaltung für eine Metzgerei. Vollständig eigenständig entwickelt, deployed und gewartet.',
-    date: '2026',
-    icon: 'fas fa-store', iconBg: 'bg-green-900/50', iconColor: 'text-green-400',
-    tags: ['Vue.js', 'Firebase', 'Admin Portal', 'GitHub Pages'],
-    link: 'https://www.sefametzgerei.ch'
-  },
-  {
-    title: 'Ali Baba Yöresel – E-Commerce & CRM',
-    desc: 'Vollständige E-Commerce & CRM-Plattform mit Admin Portal. Konzept, Entwicklung, Deployment und Wartung komplett eigenständig durchgeführt.',
-    date: '2026',
-    icon: 'fas fa-shopping-cart', iconBg: 'bg-purple-900/50', iconColor: 'text-purple-400',
-    tags: ['Vue.js', 'Firebase', 'CRM', 'Admin Portal'],
-    link: 'https://www.alibabayoresel.com.tr'
-  },
-]
 </script>

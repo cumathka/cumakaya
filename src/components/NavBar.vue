@@ -5,7 +5,7 @@
   ]">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#hero" class="flex items-center gap-2">
-        <img src="/logo2.jpg" alt="Logo" class="h-12 w-auto" />
+        <img src="/logo3.jpg" alt="Logo" class="h-12 w-auto" />
       </a>
 
       <!-- Desktop Menu -->

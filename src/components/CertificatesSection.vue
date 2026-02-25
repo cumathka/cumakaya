@@ -84,7 +84,7 @@ const currentPage = ref(1)
 
 // Responsive items per page
 const getItemsPerPage = () => {
-    return window.innerWidth < 768 ? 5 : 12
+    return window.innerWidth < 768 ? 5 : 9
 }
 
 const itemsPerPage = ref(getItemsPerPage())
