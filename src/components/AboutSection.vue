@@ -58,7 +58,7 @@
               </div>
               <div>
                 <p class="text-gray-500 text-xs mb-0.5">{{ t.about.languages }}</p>
-                <p class="text-white text-sm font-medium">TR · DE (B2) · EN (B1)</p>
+                <p class="text-white text-sm font-medium">TR · DE (B2) · EN (B2)</p>
               </div>
             </div>
              
@@ -101,7 +101,7 @@
 
           <div class="card text-center hover:-translate-y-1">
             <div class="text-3xl font-extrabold text-transparent bg-clip-text
-                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">9M</div>
+                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">15M</div>
             <p class="text-gray-400 text-sm">{{ t.about.stats.training }}</p>
           </div>
 

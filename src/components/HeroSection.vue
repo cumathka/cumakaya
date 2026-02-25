@@ -74,7 +74,7 @@
                       blur-lg opacity-30 scale-105 animate-pulse"></div>
           <div class="relative w-72 h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden
                       border-2 border-indigo-500/60 shadow-2xl shadow-indigo-500/20">
-            <img src="/profile.jpg" alt="Cuma Kaya" class="w-full h-full object-cover" />
+            <img src="/profile2.jpg" alt="Cuma Kaya" class="w-full h-full object-cover" />
           </div>
           <div class="absolute bottom-4 -right-4 bg-gradient-to-r from-indigo-600 to-purple-600
                       text-white text-xs font-bold px-4 py-2 rounded-xl shadow-xl flex items-center gap-2">

@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  background-color: #0f172a; /* Fix iOS overscroll/safe-area background issues */
 }
 
 body {
@@ -14,8 +15,12 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Fallback */
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  /* Use a fallback for old browsers, then modernize */
+  min-height: 100dvh;
+  /* Prevent background propagation issues */
+  position: relative;
+  width: 100%;
 }
 
 img,
