@@ -361,7 +361,7 @@ const translations = {
         },
         {
           title: "Full Stack Web-Entwicklung",
-          institution: "Hi-Coders (9 Monate)",
+          institution: "Hi-Coders (15 Monate)",
           year: "2022",
           items: [
             "HTML, CSS, JavaScript",
@@ -558,7 +558,7 @@ const translations = {
         },
         {
           title: "Full Stack Web Development",
-          institution: "Hi-Coders (9 months)",
+          institution: "Hi-Coders (15 months)",
           year: "2022",
           items: [
             "HTML, CSS, JavaScript",
@@ -756,7 +756,7 @@ const translations = {
         },
         {
           title: "Développement Web Full Stack",
-          institution: "Hi-Coders (9 mois)",
+          institution: "Hi-Coders (15 mois)",
           year: "2022",
           items: [
             "HTML, CSS, JavaScript",
@@ -953,7 +953,7 @@ const translations = {
         },
         {
           title: "Full Stack Web Geliştirme",
-          institution: "Hi-Coders (9 ay)",
+          institution: "Hi-Coders (15 ay)",
           year: "2022",
           items: [
             "HTML, CSS, JavaScript",
