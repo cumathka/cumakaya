@@ -1,7 +1,7 @@
 <template>
   <nav :class="[
     'fixed top-0 w-full z-50 transition-all duration-300',
-    isScrolled ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+    isScrolled || open ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
   ]">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#hero" class="flex items-center gap-2">
@@ -15,11 +15,11 @@
         <li><a href="#projects" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.projects }}</a>
         </li>
         <li><a href="#experience" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.experience
-        }}</a></li>
+            }}</a></li>
         <li><a href="#education" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.education }}</a>
         </li>
         <li><a href="#certificates" class="text-gray-400 hover:text-indigo-400 transition-colors">{{ t.nav.certificates
-        }}</a></li>
+            }}</a></li>
       </ul>
 
       <div class="hidden md:flex items-center gap-4">
@@ -44,7 +44,7 @@
 
       <!-- Mobile Menu Button -->
       <button @click="open = !open"
-        class="md:hidden text-gray-400 hover:text-white text-xl w-8 h-8 flex items-center justify-center">
+        class="md:hidden text-gray-400 hover:text-white text-xl w-8 h-8 flex items-center justify-center z-50">
         <i :class="open ? 'fas fa-times' : 'fas fa-bars'"></i>
       </button>
     </div>
@@ -52,7 +52,10 @@
     <!-- Mobile Dropdown -->
     <transition name="fade-down">
       <div v-show="open"
-        class="md:hidden fixed top-16 left-0 w-full h-[calc(100vh-4rem)] bg-slate-900/98 backdrop-blur-xl border-t border-gray-800 overflow-y-auto">
+        class="md:hidden fixed top-0 left-0 w-full h-screen bg-slate-900/98 backdrop-blur-xl z-40 overflow-y-auto">
+        <div class="flex justify-end p-6">
+          <!-- Close button placeholder or spacer if needed, but the main button is z-50 so it stays on top -->
+        </div>
         <ul class="flex flex-col items-center justify-center min-h-full py-8 space-y-6">
           <li><a href="#about" @click="open = false"
               class="text-xl font-medium text-gray-300 hover:text-indigo-400 transition-colors">{{ t.nav.about }}</a>

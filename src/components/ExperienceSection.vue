@@ -13,9 +13,8 @@
                     bg-gradient-to-b from-indigo-500 via-purple-600 to-transparent
                     transform md:-translate-x-1/2"></div>
 
-        <div v-for="(job, i) in t.experience.jobs" :key="i"
-             class="relative mb-10 pl-16 md:pl-0"
-             :data-aos="i % 2 === 0 ? 'fade-right' : 'fade-left'">
+        <div v-for="(job, i) in t.experience.jobs" :key="i" class="relative mb-10 pl-16 md:pl-0"
+          :data-aos="i % 2 === 0 ? 'fade-right' : 'fade-left'">
 
           <!-- Dot -->
           <div class="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 -translate-y-0.5
@@ -25,19 +24,18 @@
           <!-- Alternating card -->
           <div :class="['md:w-[calc(50%-2rem)]', i % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto']">
             <div class="card hover:-translate-y-1">
-              <div class="flex items-start justify-between gap-3 mb-3">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
                 <div>
                   <h3 class="font-bold text-white text-lg">{{ job.title }}</h3>
                   <p class="text-indigo-400 text-sm font-medium">{{ job.company }}</p>
                 </div>
                 <span class="bg-indigo-900/40 border border-indigo-700/40 text-indigo-300
-                             text-xs px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
+                             text-xs px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0 mt-1 sm:mt-0">
                   {{ job.period }}
                 </span>
               </div>
               <ul class="space-y-1.5">
-                <li v-for="point in job.points" :key="point"
-                    class="text-gray-400 text-sm flex items-start gap-2">
+                <li v-for="point in job.points" :key="point" class="text-gray-400 text-sm flex items-start gap-2">
                   <i class="fas fa-chevron-right text-indigo-500 text-xs mt-1 flex-shrink-0"></i>
                   {{ point }}
                 </li>

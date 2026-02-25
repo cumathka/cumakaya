@@ -75,7 +75,18 @@ const { t } = useLanguage()
 
 // Pagination State
 const currentPage = ref(1)
-const itemsPerPage = 12 // 12 items per page as requested
+
+// Responsive items per page
+const getItemsPerPage = () => {
+    return window.innerWidth < 768 ? 5 : 12
+}
+
+const itemsPerPage = ref(getItemsPerPage())
+
+// Update pagination on resize
+window.addEventListener('resize', () => {
+    itemsPerPage.value = getItemsPerPage()
+})
 
 // Computed Properties
 const allItems = computed(() => {
@@ -83,12 +94,12 @@ const allItems = computed(() => {
 })
 
 const totalPages = computed(() => {
-    return Math.ceil(allItems.value.length / itemsPerPage)
+    return Math.ceil(allItems.value.length / itemsPerPage.value)
 })
 
 const paginatedItems = computed(() => {
-    const start = (currentPage.value - 1) * itemsPerPage
-    const end = start + itemsPerPage
+    const start = (currentPage.value - 1) * itemsPerPage.value
+    const end = start + itemsPerPage.value
     return allItems.value.slice(start, end)
 })
 

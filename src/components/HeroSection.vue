@@ -8,7 +8,8 @@
       <div class="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-purple-800/15 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative z-10 max-w-6xl mx-auto px-6 py-24 lg:py-32 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div
+      class="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-24 lg:py-32 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
 
       <!-- Left: Text -->
       <div data-aos="fade-right">
@@ -51,11 +52,11 @@
         </div>
 
         <div class="flex gap-5">
-          <a href="https://github.com" target="_blank"
+          <a href="https://github.com/cumathka" target="_blank"
             class="text-gray-500 hover:text-white text-2xl transition-all hover:-translate-y-0.5 duration-200">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://linkedin.com" target="_blank"
+          <a href="https://www.linkedin.com/in/cuma-kaya-b8124018a/" target="_blank"
             class="text-gray-500 hover:text-indigo-400 text-2xl transition-all hover:-translate-y-0.5 duration-200">
             <i class="fab fa-linkedin"></i>
           </a>

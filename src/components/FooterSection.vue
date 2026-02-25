@@ -3,8 +3,8 @@
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <p class="text-gray-500 text-sm">{{ t.footer.rights }}</p>
       <div class="flex gap-5">
-        <a href="https://github.com"    target="_blank" class="text-gray-600 hover:text-white     text-lg transition-colors"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com"  target="_blank" class="text-gray-600 hover:text-indigo-400 text-lg transition-colors"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/cumathka"    target="_blank" class="text-gray-600 hover:text-white     text-lg transition-colors"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/cuma-kaya-b8124018a/"  target="_blank" class="text-gray-600 hover:text-indigo-400 text-lg transition-colors"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:cuma.kaya@hicoders.ch"          class="text-gray-600 hover:text-indigo-400 text-lg transition-colors"><i class="fas fa-envelope"></i></a>
       </div>
       <p class="text-gray-600 text-xs">
