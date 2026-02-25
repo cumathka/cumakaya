@@ -60,7 +60,7 @@ const projects = [
   {
     title: 'Data Hackdays Uri 2025',
     desc: 'Integration Monitoring Projekt. Frontend eigenständig innerhalb von 2 Tagen entwickelt und auf AWS S3 gehostet. Demographische & soziale Daten kombiniert.',
-    date: 'April 2023',
+    date: 'April 2025',
     icon: 'fas fa-chart-bar', iconBg: 'bg-orange-900/50', iconColor: 'text-orange-400',
     tags: ['AWS S3', 'Frontend', 'Data Analysis'],
     link: 'https://cumathka.github.io/hoi_ui/#/'
@@ -68,7 +68,7 @@ const projects = [
   {
     title: 'Sefa Metzgerei – E-Commerce & Admin Portal',
     desc: 'Professionelle E-Commerce Plattform mit Admin-Verwaltung für eine Metzgerei. Vollständig eigenständig entwickelt, deployed und gewartet.',
-    date: '2023',
+    date: '2026',
     icon: 'fas fa-store', iconBg: 'bg-green-900/50', iconColor: 'text-green-400',
     tags: ['Vue.js', 'Firebase', 'Admin Portal', 'GitHub Pages'],
     link: 'https://www.sefametzgerei.ch'
@@ -76,7 +76,7 @@ const projects = [
   {
     title: 'Ali Baba Yöresel – E-Commerce & CRM',
     desc: 'Vollständige E-Commerce & CRM-Plattform mit Admin Portal. Konzept, Entwicklung, Deployment und Wartung komplett eigenständig durchgeführt.',
-    date: '2023',
+    date: '2026',
     icon: 'fas fa-shopping-cart', iconBg: 'bg-purple-900/50', iconColor: 'text-purple-400',
     tags: ['Vue.js', 'Firebase', 'CRM', 'Admin Portal'],
     link: 'https://www.alibabayoresel.com.tr'

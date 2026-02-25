@@ -44,14 +44,20 @@
 
                 <!-- Page Numbers -->
                 <div class="flex flex-wrap justify-center gap-1 md:gap-2">
-                    <button v-for="page in displayedPages" :key="page" @click="goToPage(page)" :class="[
-                        'w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center text-xs md:text-sm font-medium transition-all border',
-                        currentPage === page
-                            ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-500/20'
-                            : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-indigo-500/50 hover:text-indigo-400'
-                    ]">
-                        {{ page }}
-                    </button>
+                    <template v-for="(page, index) in displayedPages" :key="index">
+                        <span v-if="page === '...'"
+                            class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center text-slate-500 font-bold select-none">
+                            ...
+                        </span>
+                        <button v-else @click="goToPage(page)" :class="[
+                            'w-8 h-8 md:w-10 md:h-10 rounded-lg flex items-center justify-center text-xs md:text-sm font-medium transition-all border',
+                            currentPage === page
+                                ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-500/20'
+                                : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-indigo-500/50 hover:text-indigo-400'
+                        ]">
+                            {{ page }}
+                        </button>
+                    </template>
                 </div>
 
                 <!-- Next Button -->
@@ -104,11 +110,38 @@ const paginatedItems = computed(() => {
 })
 
 const displayedPages = computed(() => {
-    const pages = []
-    for (let i = 1; i <= totalPages.value; i++) {
-        pages.push(i)
+    const total = totalPages.value
+    const current = currentPage.value
+    const delta = 1 // Number of pages to show around current page
+
+    const range = []
+    const rangeWithDots = []
+    let l
+
+    range.push(1)
+
+    if (total <= 1) return range
+
+    for (let i = current - delta; i <= current + delta; i++) {
+        if (i < total && i > 1) {
+            range.push(i)
+        }
     }
-    return pages
+    range.push(total)
+
+    for (let i of range) {
+        if (l) {
+            if (i - l === 2) {
+                rangeWithDots.push(l + 1)
+            } else if (i - l !== 1) {
+                rangeWithDots.push('...')
+            }
+        }
+        rangeWithDots.push(i)
+        l = i
+    }
+
+    return rangeWithDots
 })
 
 // Watch for language changes to reset pagination
