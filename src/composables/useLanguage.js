@@ -284,7 +284,7 @@ const translations = {
           iconBg: "bg-green-900/50",
           iconColor: "text-green-400",
           tags: ["Vue.js", "Firebase", "Admin Portal", "GitHub Pages"],
-          link: "https://cumathka.github.io/plus-metz/",
+          link: "https://plus-metz.vercel.app",
         },
         {
           title: "Ali Baba Yöresel – E-Commerce & CRM",
@@ -482,7 +482,7 @@ const translations = {
           iconBg: "bg-green-900/50",
           iconColor: "text-green-400",
           tags: ["Vue.js", "Firebase", "Admin Portal", "GitHub Pages"],
-          link: "https://cumathka.github.io/plus-metz/",
+          link: "https://plus-metz.vercel.app",
         },
         {
           title: "Ali Baba Yöresel – E-Commerce & CRM",
@@ -679,7 +679,7 @@ const translations = {
           iconBg: "bg-green-900/50",
           iconColor: "text-green-400",
           tags: ["Vue.js", "Firebase", "Portail Admin", "GitHub Pages"],
-          link: "https://cumathka.github.io/plus-metz/",
+          link: "https://plus-metz.vercel.app",
         },
         {
           title: "Ali Baba Yöresel – E-Commerce & CRM",
@@ -877,7 +877,7 @@ const translations = {
           iconBg: "bg-green-900/50",
           iconColor: "text-green-400",
           tags: ["Vue.js", "Firebase", "Admin Portalı", "GitHub Pages"],
-          link: "https://cumathka.github.io/plus-metz/",
+          link: "https://plus-metz.vercel.app",
         },
         {
           title: "Ali Baba Yöresel – E-Ticaret & CRM",
