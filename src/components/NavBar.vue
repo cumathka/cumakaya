@@ -4,8 +4,24 @@
     isScrolled || open ? 'bg-slate-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
   ]">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#hero" class="flex items-center gap-2">
-        <img src="/logo3.jpg" alt="Logo" class="h-12 w-auto" />
+      <a href="#hero" class="flex items-center gap-3 group relative">
+        <div class="relative">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-200">
+          </div>
+          <div
+            class="relative flex items-center justify-center bg-slate-900 border border-indigo-500/30 text-indigo-400 font-mono font-bold text-lg w-10 h-10 rounded-lg shadow-2xl group-hover:scale-110 group-hover:border-indigo-400 transition-all duration-300">
+            &lt;/&gt;
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-white font-black text-xl tracking-tighter font-mono leading-none">
+            Cuma<span
+              class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent group-hover:from-indigo-300 group-hover:to-purple-300 transition-all duration-300">Kaya</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-indigo-500/80 font-bold font-sans">Full-Stack
+            Dev</span>
+        </div>
       </a>
 
       <!-- Desktop Menu -->
