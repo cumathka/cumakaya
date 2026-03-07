@@ -11,7 +11,15 @@
         <div v-for="(p, i) in t.projects.items" :key="p.title" class="card flex flex-col hover:-translate-y-2 group"
           data-aos="fade-up" :data-aos-delay="i * 100">
 
-          <div class="flex items-start justify-between mb-4">
+          <!-- Eğer logo varsa (Sayfa ile uyumlu, sığdırılmış çerçeve) -->
+          <a v-if="p.logo" :href="p.link" target="_blank"
+            class="w-full h-40 mb-5 rounded-xl flex items-center justify-center overflow-hidden bg-white/95 border border-indigo-500/20 cursor-pointer hover:scale-[1.02] hover:border-indigo-400/50 transition-all shadow-sm"
+            :title="t.projects.live">
+            <img :src="'/' + p.logo" :alt="p.title" class="w-full h-full object-contain p-4" />
+          </a>
+
+          <!-- Eğer logo yoksa (İkon ve Link) -->
+          <div v-else class="flex items-start justify-between mb-4">
             <div class="w-12 h-12 rounded-xl flex items-center justify-center" :class="p.iconBg">
               <i :class="p.icon + ' text-xl ' + p.iconColor"></i>
             </div>
@@ -23,9 +31,16 @@
             </div>
           </div>
 
-          <h3 class="font-bold text-white text-lg mb-2 group-hover:text-indigo-300 transition-colors">
-            {{ p.title }}
-          </h3>
+          <!-- Başlık Satırı -->
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="font-bold text-white text-lg group-hover:text-indigo-300 transition-colors flex-1 pr-4">
+              {{ p.title }}
+            </h3>
+            <a v-if="p.logo && p.link" :href="p.link" target="_blank"
+              class="text-gray-500 hover:text-indigo-400 transition-colors text-sm shrink-0" :title="t.projects.live">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
           <p class="text-gray-400 text-sm leading-relaxed mb-4 flex-1">{{ p.desc }}</p>
 
           <div class="text-xs text-gray-500 mb-4">
