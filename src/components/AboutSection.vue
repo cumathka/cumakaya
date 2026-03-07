@@ -32,7 +32,7 @@
               </div>
             </div>
 
-             <div class="flex items-start gap-3">
+            <div class="flex items-start gap-3">
               <div class="w-8 h-8 bg-indigo-900/50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i class="fas fa-envelope text-indigo-400 text-sm"></i>
               </div>
@@ -42,7 +42,7 @@
               </div>
             </div>
 
-             <div class="flex items-start gap-3">
+            <div class="flex items-start gap-3">
               <div class="w-8 h-8 bg-indigo-900/50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i class="fas fa-phone text-indigo-400 text-sm"></i>
               </div>
@@ -52,7 +52,7 @@
               </div>
             </div>
 
-             <div class="flex items-start gap-3">
+            <div class="flex items-start gap-3">
               <div class="w-8 h-8 bg-indigo-900/50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i class="fas fa-language text-indigo-400 text-sm"></i>
               </div>
@@ -61,8 +61,8 @@
                 <p class="text-white text-sm font-medium">TR · DE (B2) · EN (B2)</p>
               </div>
             </div>
-             
-             <div class="flex items-start gap-3">
+
+            <div class="flex items-start gap-3">
               <div class="w-8 h-8 bg-indigo-900/50 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                 <i class="fab fa-aws text-indigo-400 text-sm"></i>
               </div>
@@ -87,29 +87,40 @@
 
         <!-- Stats -->
         <div data-aos="fade-left" class="grid grid-cols-2 gap-4">
-          <div class="card text-center hover:-translate-y-1">
-            <div class="text-3xl font-extrabold text-transparent bg-clip-text
-                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">4+</div>
-            <p class="text-gray-400 text-sm">{{ t.about.stats.projects }}</p>
-          </div>
-          
-          <div class="card text-center hover:-translate-y-1">
-            <div class="text-3xl font-extrabold text-transparent bg-clip-text
-                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">50+</div>
-            <p class="text-gray-400 text-sm">{{ t.about.stats.certs }}</p>
-          </div>
+          <a href="#projects" class="card text-center hover:-translate-y-1 block cursor-pointer group">
+            <div
+              class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-2 group-hover:scale-110 transition-transform">
+              +6
+            </div>
+            <p class="text-gray-400 text-sm group-hover:text-indigo-300 transition-colors">{{ t.about.stats.projects }}
+            </p>
+          </a>
 
-          <div class="card text-center hover:-translate-y-1">
-            <div class="text-3xl font-extrabold text-transparent bg-clip-text
-                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">15M</div>
-            <p class="text-gray-400 text-sm">{{ t.about.stats.training }}</p>
-          </div>
+          <a href="#certificates" class="card text-center hover:-translate-y-1 block cursor-pointer group">
+            <div
+              class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-2 group-hover:scale-110 transition-transform">
+              50+
+            </div>
+            <p class="text-gray-400 text-sm group-hover:text-indigo-300 transition-colors">{{ t.about.stats.certs }}</p>
+          </a>
 
-          <div class="card text-center hover:-translate-y-1">
-            <div class="text-3xl font-extrabold text-transparent bg-clip-text
-                        bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">9+</div>
-            <p class="text-gray-400 text-sm">{{ t.about.stats.teaching }}</p>
-          </div>
+          <a href="#education" class="card text-center hover:-translate-y-1 block cursor-pointer group">
+            <div
+              class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-2 group-hover:scale-110 transition-transform">
+              15M
+            </div>
+            <p class="text-gray-400 text-sm group-hover:text-indigo-300 transition-colors">{{ t.about.stats.training }}
+            </p>
+          </a>
+
+          <a href="#experience" class="card text-center hover:-translate-y-1 block cursor-pointer group">
+            <div
+              class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-2 group-hover:scale-110 transition-transform">
+              9+
+            </div>
+            <p class="text-gray-400 text-sm group-hover:text-indigo-300 transition-colors">{{ t.about.stats.teaching }}
+            </p>
+          </a>
         </div>
       </div>
     </div>
