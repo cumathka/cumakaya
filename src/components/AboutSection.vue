@@ -16,8 +16,11 @@
           <p class="text-gray-400 leading-relaxed mb-4">
             {{ t.about.p1 }}
           </p>
-          <p class="text-gray-400 leading-relaxed mb-8">
+          <p class="text-gray-400 leading-relaxed mb-4">
             {{ t.about.p2 }}
+          </p>
+          <p class="text-gray-400 leading-relaxed mb-8">
+            {{ t.about.p3 }}
           </p>
 
           <div class="grid grid-cols-2 gap-4">
