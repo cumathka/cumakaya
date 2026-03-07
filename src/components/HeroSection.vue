@@ -34,7 +34,7 @@
 
         <div class="flex flex-wrap gap-2 mb-10">
           <span v-for="badge in badges" :key="badge.text"
-            :class="badge.cls + ' text-sm font-medium px-4 py-1.5 rounded-full border'">
+            :class="badge.cls + ' text-sm font-medium px-4 py-1.5 rounded-full border hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 cursor-default'">
             <i :class="badge.icon + ' mr-1.5 text-xs'"></i>{{ badge.text }}
           </span>
         </div>
